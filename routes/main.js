@@ -4,6 +4,7 @@ import {myModal} from "../models/Post.js"
 
 
 router.get('/', (req, res) => {
+  console.log(req.session);
     res.render('pages/home');
     
 });
@@ -25,9 +26,6 @@ router.get('/blog', (req, res) => {
 });
 
 
-router.get('/login', (req, res) => {
-  res.render('pages/login');
-});
 
 
 
